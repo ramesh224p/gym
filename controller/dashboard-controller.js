@@ -59,6 +59,8 @@ app.controller('dashboardController',['$scope', '$http', '$localStorage', '$wind
 }
 
 
+
+//this is forr role=2
  
  if(roly==2){
 	$http.get('http://localhost:3003/dashboard').then(function(response){
