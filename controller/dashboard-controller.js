@@ -18,7 +18,7 @@ app.controller('dashboardController',['$scope', '$http', '$localStorage', '$wind
 	 
 	//this is for role=1
 	 
-	  if(roly==1){
+	if(roly==1){
 		emp_id=$scope.ready.id;
 		var emp_obj={};
 		$scope.eemail=$scope.ready.email;
@@ -55,14 +55,14 @@ app.controller('dashboardController',['$scope', '$http', '$localStorage', '$wind
 				$scope.some.push(emp)
 			}
 		})			
+		}
 	}
-}
 
 
 
-//this is forr role=2
+//this is for role=2
  
- if(roly==2){
+	if(roly==2){
 	$http.get('http://localhost:3003/dashboard').then(function(response){
 		console.log(response.data.data);
 		$scope.some=response.data.data;
@@ -123,10 +123,10 @@ app.controller('dashboardController',['$scope', '$http', '$localStorage', '$wind
 				$scope.some.splice(index,1);
 				$http.delete('http://localhost:3003/dashboard/'+id).then(function(response){
 				console.log(response);
-			}); 
+				}); 
+			}
 		}
-	}
- }	
+	}	
  
 
 	
