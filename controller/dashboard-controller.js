@@ -15,6 +15,9 @@ app.controller('dashboardController',['$scope', '$http', '$localStorage', '$wind
 		});
 	}
 	 
+	 
+	//this is for role=1
+	 
 	  if(roly==1){
 		emp_id=$scope.ready.id;
 		var emp_obj={};
