@@ -1,3 +1,5 @@
+//this is dashboard controller
+
 app.controller('dashboardController',['$scope', '$http', '$localStorage', '$window', function($scope, $http, $localStorage, $window){
 	$scope.ready = $localStorage.userData;
 	roly=$scope.ready.role;
